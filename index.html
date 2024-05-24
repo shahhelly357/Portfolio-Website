@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="./jquery-3.7.1.slim.min.js"></script>
+<!-- <script src="../Imsc 4th Sem/AWT PRACTICAL/AWT Assignment 1/jquery-3.7.1.js"></script> -->
+<script src="https://kit.fontawesome.com/286b9e315f.js" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#skill").click(function () {
+            $("#skills").show();
+            $("#experience").hide();
+            $("#education").hide();
+        })
+        $("#exp").click(function () {
+            $("#experience").show();
+            $("#skills").hide();
+            $("#education").hide();
+        })
+        $("#edu").click(function () {
+            $("#experience").hide();
+            $("#skills").hide();
+            $("#education").show();
+        })
+        $(".btn3").click(function () {
+            alert("Successfully Submitted");
+        })
+    })
+</script>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+            <nav>
+
+                <span class="name"><span class="h">H</span>elly</span>
+                <ul class="class">
+                    <li><a href="#home" class="a" id="home">Home</a></li><a class="div"></a>
+                    <li><a href="#about" class="a">About</a></li>
+                    <li><a href="#services" class="a">Services</a></li>
+                    <li><a href="#skills2" class="a">Skills</a></li>
+                    <li><a href="#contact" class="a" >Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="headtext">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Helly</span><br>Shah</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="Images/h9_s_SS - Copy.png">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm like a digital architect, but instead of buildings, I create websites that are not just
+                        pretty to look at, but also easy to use. Think of me as a problem solver in the online world. I
+                        use a mix of creativity and technical skills to bring ideas to life on the internet. Whether
+                        it's making sure a button clicks just right or making sure a website loads super fast, I'm all
+                        about making things work seamlessly. I'm constantly learning and adapting to new trends and
+                        technologies to make sure the websites I build are always ahead of the curve. So, if you have a
+                        vision for your online presence, I'm the person who can turn that vision into reality, pixel by
+                        pixel.</p>
+                    <div class="titles">
+                        <p class="link active" id="skill">Skills</p>
+                        <p class="link active" id="exp">Experience</p>
+                        <p class="link active" id="edu">Education</p>
+                    </div>
+                    <div class="contents active" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="experience">
+                        <ul>
+                            <li><span></span><br>Fresher</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Completed 10th</li>
+                            <li><span>2022</span><br>Completed 12th from Fatima Convent</li>
+                            <li><span>2025</span><br>Bsc(ca & it) from K.S. School of Business and Management | Gujarat
+                                University</li>
+                            <li><span>2027</span><br>Msc(ca & it) from K.S. School of Business and Management | Gujarat
+                                University</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Here's a concise list of services for a web designer:<br><br>
+                        1. Custom website design<br><br>
+                        2. Responsive design<br><br>
+                        3. User interface (UI) design<br><br>
+                        4. Graphic design elements<br><br>
+                        5. Typography and color selection<br><br>
+                        6. Accessibility and usability<br><br>
+                        7. E-commerce design<br><br>
+                        8. Website maintenance and support<br><br>
+                        9. Consultation and collaboration</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Here's a concise list of services for a UI/UX designer:<br><br>
+                        1. UI Design<br><br>
+                        2. UX Design<br><br>
+                        3. Prototyping<br><br>
+                        4. Usability Testing<br><br>
+                        5. Interaction Design<br><br>
+                        6. Information Architecture<br><br>
+                        7. Visual Design<br><br>
+                        8. Accessibility<br><br>
+                        9. Collaboration<br><br>
+                        10. Iterative Improvement</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Here's a concise list of services for a UI/UX designer:<br><br>
+                        1. UI/UX Design<br><br>
+                        2. Prototyping<br><br>
+                        3. Usability Testing<br><br>
+                        4. Graphic Design<br><br>
+                        5. Branding Integration<br><br>
+                        6. Responsive Design<br><br>
+                        7. Collaboration<br><br>
+                        8. Iterative Design</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="Images/h9_s_SS - Copy.png"><br>
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from the playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/h9_s_SS - Copy.png"><br>
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from the playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/h9_s_SS - Copy.png"><br>
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from the playstore</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div> -->
+    <!-- <a href="#" class="btn">See More</a> -->
+    <!-- </div> -->
+
+    <div id="skills2">
+        <h3 class="heading">SKILLS</h3><br>
+        <div class="left">
+            <h4>HTML</h4><a class="content">85%</a>
+            <div class="html">
+                <div class="fill"></div>
+            </div><br>
+
+            <h4>C</h4><a class="content">83%</a>
+            <div class="html">
+                <div class="fill1"></div>
+            </div><br>
+
+            <h4>C#</h4><a class="content">70%</a>
+            <div class="html">
+                <div class="fill2"></div>
+            </div><br>
+
+            <h4>C++</h4><a class="content">78%</a>
+            <div class="html">
+                <div class="fill3"></div>
+            </div><br>
+
+            <h4>CSS</h4><a class="content">67%</a>
+            <div class="html">
+                <div class="fill4"></div>
+            </div><br>
+
+            <h4>Javascript</h4><a class="content">30%</a>
+            <div class="html">
+                <div class="fill5"></div>
+            </div><br>
+
+            <h4>Node</h4><a class="content">10%</a>
+            <div class="html">
+                <div class="fill6"></div>
+            </div><br>
+        </div>
+        <div class="right">
+            <h4>Communication</h4><a class="content">88%</a>
+            <div class="html">
+                <div class="fill7"></div>
+            </div><br>
+
+            <h4>Angular</h4><a class="content">71%</a>
+            <div class="html">
+                <div class="fill8"></div>
+            </div><br>
+
+            <h4>Video Editing</h4><a class="content">77%</a>
+            <div class="html">
+                <div class="fill9"></div>
+            </div><br>
+
+            <h4>Content Writing</h4><a class="content">60%</a>
+            <div class="html">
+                <div class="fill10"></div>
+            </div><br>
+
+            <h4>MySQL</h4><a class="content">7%</a>
+            <div class="html">
+                <div class="fill11"></div>
+            </div><br>
+
+            <h4>Python</h4><a class="content">20%</a>
+            <div class="html">
+                <div class="fill12"></div>
+            </div><br>
+
+            <h4>Linux</h4><a class="content">50%</a>
+            <div class="html">
+                <div class="fill13"></div>
+            </div><br>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="leftcontact">
+                    <h1 class="subtitle t">Contact Me</h1>
+                    <p><a href="gmail//shahhelly357@gmail.com"><i
+                                class="fa-solid fa-paper-plane"></a></i>shahhelly357@gmail.com</p>
+                    <p><a href="https://web.whatsapp.com/9428994901"><i
+                                class="fa-brands fa-whatsapp"></i></a></i>9428994901</p>
+                    <div class="socialicon">
+                        <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+                        <a href="https://www.instagram.com/helly_1408/?next=%2F"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Helly Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="rightcontact">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your mail" required>
+                        <textarea name="message" rows="5" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2 btn3">SUBMIT</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Helly.</p>
+        </div>
+    </div>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWG1KzDfdTVzt0jnTg9-SEzcUEPxmP-GA55aM4bXhAPDMjeGCDlZjkiYK5ZbSTBrUW0A/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
